@@ -1,0 +1,13 @@
+.section {
+  animation: swipe 10000ms linear infinite backwards;
+}
+
+@keyframes swipe {
+  0% {
+    transform: translate(0);
+  }
+
+  100% {
+    transform: translate(-100%);
+  }
+}

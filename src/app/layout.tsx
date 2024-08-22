@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Jost } from "next/font/google";
 import "./globals.css";
+import { TabBar } from "@/components/tab_bar/tab_bar";
+import { ThemeProvider } from "@/provider/ThemeProvider";
 
-const inter = Inter({ subsets: ["latin"] });
+const jost = Jost({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,7 +18,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={jost.className}>
+        <TabBar />
+        {children}
+      </body>
     </html>
   );
 }
