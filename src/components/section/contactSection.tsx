@@ -25,7 +25,7 @@ export function ContactSection() {
       </div>
       <div className="my-[2%]">
         <div className="text-center text-[#9CA3AF] font-light text-[16px]">
-          I'm always excited to connect with like-minded professionals and
+          I&apos;m always excited to connect with like-minded professionals and
           potential collaborators.
         </div>
         <div className="text-center text-[#9CA3AF] font-light text-[16px]">

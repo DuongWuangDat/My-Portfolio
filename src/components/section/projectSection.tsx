@@ -56,10 +56,10 @@ export function ProjectSection() {
       </div>
       <div className="mt-[10px]">
         <div className="font-medium text-[16px] text-center">
-          It's not a bug, it's a feature
+          It&apos;s not a bug, it&apos;s a feature
         </div>
         <div className="font-medium text-[16px] text-center">
-          Backend is the heartbeat of any application; it's the unseen force
+          Backend is the heartbeat of any application; it&apos;s the unseen force
           that brings everything to life.
         </div>
       </div>

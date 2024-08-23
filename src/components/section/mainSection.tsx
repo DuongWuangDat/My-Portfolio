@@ -38,7 +38,7 @@ export function MainSection() {
         </div>
 
         <div className="flex flex-col absolute top-[35%] justify-center items-center">
-          <div className="font-semibold text-[60px]">I'm Quang Dat</div>
+          <div className="font-semibold text-[60px]">I&apos;m Quang Dat</div>
           <div className="font-semibold text-[36px]">
             A <span className="text-[#0EC47E]">full-stack</span> developer
           </div>

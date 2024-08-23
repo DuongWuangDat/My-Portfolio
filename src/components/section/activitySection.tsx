@@ -35,7 +35,7 @@ export function ActivitySection() {
       </div>
       <div className="flex items-center flex-col mt-[10px]">
         <div>
-          Every activity I've engaged in is a stepping stone, each experience a
+          Every activity I&apos;ve engaged in is a stepping stone, each experience a
           thread in the fabric of my growth.
         </div>
         <div>

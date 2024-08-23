@@ -22,8 +22,8 @@ export function AboutSection() {
           </div>
           <div className="font-light text-[16px]">
             With an unwavering passion for technology, particularly in IT fields
-            like backend, frontend, and AI. I'm always eager to explore and
-            acquire new knowledge. Currently, I'm striving to become a
+            like backend, frontend, and AI. I&apos;m always eager to explore and
+            acquire new knowledge. Currently, I&apos;m striving to become a
             comprehensive fullstack developer.
           </div>
           <div className="font-light text-[16px]">My Education Background</div>
