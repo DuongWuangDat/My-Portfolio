@@ -8,7 +8,22 @@ const DynamicLottie = dynamic(() => import("lottie-react"), { ssr: false });
 import Image from "next/image";
 import { useEffect } from "react";
 import { ContactMeButton } from "../button/ContactMeButton";
+import gsap from "gsap";
 export function MainSection() {
+  useEffect(() => {
+    gsap.fromTo(
+      ".text-animation",
+      {
+        y: 100,
+        opacity: 0,
+      },
+      {
+        stagger: 0.2,
+        y: 0,
+        opacity: 1,
+      }
+    );
+  }, []);
   return (
     <section className="min-h-screen max w-full bg-[#121A1C]">
       <div className="flex flex-row justify-center items-center min-h-screen">
@@ -19,7 +34,7 @@ export function MainSection() {
           <Image
             src={GitIcon}
             alt="giticon"
-            className="size-[15%] z-[100] absolute bottom-[19rem] left-[16rem] object-contain"
+            className="size-[15%] z-[3] absolute bottom-[19rem] left-[16rem] object-contain"
           />
         </div>
 
@@ -38,11 +53,13 @@ export function MainSection() {
         </div>
 
         <div className="flex flex-col absolute top-[35%] justify-center items-center">
-          <div className="font-semibold text-[60px]">I&apos;m Quang Dat</div>
-          <div className="font-semibold text-[36px]">
+          <div className="text-animation font-semibold text-[60px]">
+            I&apos;m Quang Dat
+          </div>
+          <div className="text-animation font-semibold text-[36px]">
             A <span className="text-[#0EC47E]">full-stack</span> developer
           </div>
-          <div className="mt-[9px] flex justify-center items-center flex-col">
+          <div className="text-animation mt-[9px] flex justify-center items-center flex-col">
             <div>Passionate about crafting seamless digital experiences</div>
             <div className="text-center">
               I thrive on building robust backend systems and dynamic front-end

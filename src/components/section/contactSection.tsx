@@ -1,11 +1,26 @@
+"use client";
 import { InfoButton } from "../ui/contact/infoButton";
 import LinkedinIcon from "@root/public/assets/linkedinIcon.svg";
 import GithubIcon from "@root/public/assets/githubIcon.svg";
 import FaceBookIcon from "@root/public/assets/facebookIcon.svg";
+import { useEffect, useRef } from "react";
+import { useSectionStore } from "@/store/section";
+import useScrollActive from "@/hook/useScrollActive";
 
 export function ContactSection() {
+  const sectionRef = useRef(null);
+  const { setSection } = useSectionStore();
+  const contactScroll = useScrollActive(sectionRef);
+
+  useEffect(() => {
+    contactScroll && setSection("#activity");
+  }, [contactScroll, setSection]);
   return (
-    <section className="w-full h-auto bg-[#161D1F] flex flex-col items-center justify-center">
+    <section
+      ref={sectionRef}
+      id="contact"
+      className="w-full h-auto bg-[#161D1F] flex flex-col items-center justify-center"
+    >
       <div className="mt-[5%] font-light text-[18px]">Want to collaborate?</div>
       <a className="font-medium text-[48px] text-[#0EC47E] hover:text-white cursor-pointer">
         Contact me!
